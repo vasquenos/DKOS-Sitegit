@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DKOS - Ana Sayfa</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/Başlıksız-1.ico">
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</head>
+<body>
+    <!-- Header - Logo ve Navbar -->
+ <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="DKOS Logo">
+                    </a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Anasayfa</a></li>
+                    <li><a href="projelerimiz.html">Projelerimiz</a></li>
+                    
+                    <li class="dropdown">
+                        <a href="urunlerimiz.html" class="dropbtn">Ürünlerimiz ▼</a>
+                        <div class="dropdown-content">
+                            <a href="dijital-gostergeler.html">Dijital Göstergeler</a>
+                            <a href="dogrusal-cetveller.html">Doğrusal Cetveller</a>
+                            <a href="lineer-potansiyometreler.html">Lineer Potansiyometreler</a>
+                            <a href="optik-enkoderler.html">Optik Enkoderler</a>
+                            <a href="ipli-sensorler.html">İpli Sensörler</a>
+                            <a href="enjeksiyon-makinaları.html">Enjeksiyon Makinaları Cetvelleri</a>
+                            <a href="panel-tipi-olcum.html">Panel Tipi Ölçüm Cihazları</a>
+                        </div>
+                    </li>
+                   <li><a href="hakkimizda.html">Kurumsal</a></li>
+                    <li><a href="iletisim.html">İletişim</a></li>
+                </ul>
+                <div class="hamburger" onclick="toggleMobileMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Kayan Resimler Slider -->
+    <section class="slider">
+         
+        <div class="slider-container">
+           
+            <div class="slide active">
+                <img src="images\slide1.jpg" alt="Slide 1">
+            </div>
+            <div class="slide">
+                <img src="images\slide2.jpg" alt="Slide 2">
+            </div>
+            <div class="slide">
+                <img src="images\slide3.jpg" alt="Slide 3">
+            </div>
+        </div>
+        <button class="prev" onclick="changeSlide(-1)">❮</button>
+        <button class="next" onclick="changeSlide(1)">❯</button>
+    </section>
+    
+    <section class="girisbar">       
+        
+        <div class="girisbar-text"> 
+                   
+            <h1>Dijitalde Yerli ve Milli!</h1>
+            </div>
+            </section>
+
+    <!-- İstatistikler Bölümü -->
+    <section class="stats">
+        <div class="container">
+            <div class="stat-item">
+                <h2 class="counter" data-target="1996">0</h2>
+                <p>Kuruluş</p>
+            </div>
+            <div class="stat-item">
+                <h2 class="counter" data-target="1000">0</h2>
+                <span>+</span>
+                <p>Müşteri</p>
+            </div>
+            <div class="stat-item">
+                <h2 class="counter" data-target="50">0</h2>
+                <span>+</span>
+                <p>Şehir</p>
+            </div>
+        </div>
+    </section>
+    <!--Biz Kimiz-->
+    <section class="bizkimiz">
+        
+        <div id="particles-js"></div>
+         <script>
+  window.addEventListener("DOMContentLoaded", function () {
+    particlesJS("particles-js", {
+      particles: {
+        number: { value: 120 },
+        color: { value: "#ffffff" },
+        shape: { type: "circle" },
+        opacity: { value: 0.01 },
+        size: { value: 5 },
+        line_linked: {
+          enable: true,
+          distance: 200,
+          color: "#ffffff",
+          opacity: 0.4,
+          width: 1
+        },
+        move: {
+          enable: true,
+          speed: 2,
+          direction: "none",
+          random: false,
+          straight: false,
+          out_mode: "out"
+        }
+      },
+      interactivity: {
+        detect_on: "canvas",
+        
+        modes: {
+          repulse: { distance: 100 },
+          push: { particles_nb: 4 }
+        }
+      },
+      retina_detect: true
+    });
+  });
+</script>
+        <div class="bizkimiz-container">
+            
+            <div class="bizkimiz-text">
+            <h1>BİZ</h1>
+            <h2>KİMİZ?</h2>
+            </div>
+        </div>
+    </section>
+
+    <section class="info">
+        
+         <div class="info-container">
+            <div class="info-text">
+                <p>1996'dan bu yana tamamen yerli firmamız DKOS Dijital olarak Dijital Koordinat okuma sistemleri ile ilgili satış, montaj ve teknik servis olarak hizmet vererek Türkiye'nin gelişmesine katkıda bulunmayı hedefliyoruz! Çelik metre kalibrasyonu alanında da tamamen kendi imalatımız olan kalibrasyon masalarını da satışa çıkardık!</p>
+           <div class="button-container" >
+                    <a href="hakkimizda.html"> <button class="dahafazla-button" >Daha Fazla</button></a>
+                </div>
+            </div>
+        </div>  
+    </section>
+
+    <section class="referanslarimiz">
+       <h1>Referanslarımız</h1>
+        <div class="referanslarimiz-container"></div>
+       
+            <img src="images/aselsan.png" alt="aselsan" class="referans-img">
+        
+            <img src="images/mke.png" alt="mke" class="referans-img">
+
+    </section>
+
+    <section class="calistiklarimiz">
+       <h1>Çalıştığımız Firmalar</h1>
+        <div class="calistiklarimiz-container"></div>
+       
+            <img src="images/aselsan.png" alt="bb" class="calistigimiz-img">
+        
+            <img src="images/mke.png" alt="aa" class="calistigimiz-img">
+
+    </section>
+    
+    
+
+    
+    <!-- Ürünlerimiz Bölümü -->
+    <section class="products">
+        <div class="container">
+            <h2>Ürünlerimiz</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="images/urun1.jpg" alt="Ürün 1">
+                    <h3>Manyetik Bandlar</h3>
+                    <!-- <p>Manyetik Bandlar NS kutuplu sıralanmış mıknatıslardan oluşur. Manyetik sensörler ile beraber kullanılırlar. N-S kutuplu mıknatısların birbiri arasındaki mesafeye göre değişiklik gösterirler. Mıknatıs mesafesi uzadıkça sensörün uzaktan okuma kapasitesi artarken doğruluğu azalır. Maksimum okuma mesafesi mıknatıs mesafesinin yarısı ölçüsündedir. 5mm lik, 2 mm lik ve 2,56mm olamak üzere 3 çeşiti mevcuttur.</p> -->
+                </div>
+                <div class="product-card">
+                    <img src="images/urun2.jpg" alt="Ürün 2">
+                    <h3>MODEL PRI 50</h3>
+                    <!-- <p>Sanayide en çok kullanılan ekonomik sensörlerdir. Optik prensiple çalışırlar. Bir turda verdikleri kare dalga sayısına pals denir. Pals sayısına göre satılırlar. Standart olarak çeşitli çıkış tipleri mevcuttur. 8-30VTotempole(Push pull), 5V TTL Linedriver, 5-30V HTL Lindriver bu çıkış tiplerinden bazılarıdır. 50 mm gövde çapında olan ürün 6,8 mm mil çapında standart olarak üretilir. 100, 200, 300, 360, 400, 500, 600, 720, 1000, 1024, 1800, 2000, 2048, 2500, 3000, 3600, 4000, 4096, 5000 pals/tur seçenekleri mevcuttur. Standart olarak L flanş ve plastik kaplinle beraber ambalajlanır.</p> -->
+                </div>
+                <div class="product-card">
+                    <img src="images/urun3.jpg" alt="Ürün 3">
+                    <h3>MODEL LPT</h3>
+                    <!-- <p>LPT Serisi Lineer Potansiyometreler kolay montaj imkanı ve ekonomik olmaları sebebiyle kullanım sahası çok geniş ürünlerdir. Potansiyometrik çıkış verirler. 5 Kohm ve 10 Kohm seçenekleri ile üretilmektedir. Lazer trim sistemi sayesinde %0,05 linerite değerine sahiptirler. 30 mm den 1250 mm ölçme boyuna kadar üretilebilmektedir. Ağırlıklı olarak Plastik Enjeksiyon Makineleri, Memer Makineleri, Hidrolik Preslerde kullanılırlar. 100 milyon hareket ömrü ve IP 65 koruma sınıfına sahip olmaları sebebiyle sanayide bir  çok alanda tercih edilen ekonomik ürünlerdir.</p> -->
+                </div>
+                <div class="product-card">
+                    <img src="images/urun4.jpg" alt="Ürün 4">
+                    <h3>MODEL RTM</h3>
+                    <!-- <p>RTM Serisi Lineer Potansiyometreler kolay montaj imkanı ve ekonomik olmaları sebebiyle kullanım sahası çok geniş ürünlerdir. Potansiyometrik çıkış verirler. 5 ve 10 Kohm seçenekleri ile üretilmektedir. Lazer trim sistemi sayesinde %0,05 linerite değerine sahiptirler. 30 mm den 1250 mm ölçme boyuna kadar üretilebilmektedir.</p> -->
+                </div>
+                <div class="product-card">
+                    <img src="images/urun5.jpg" alt="Ürün 5">
+                    <h3>NEWALL</h3>
+                    <!-- <p>Newall, dünya çapında çok çeşitli ölçüm uygulamaları için güvenilir, doğru ve güvenilir ürünler tedarik eden yüksek kaliteli ve yüksek performanslı dijital okuma sistemleri (DRO) ve doğrusal geri besleme kodlayıcıları konusunda küresel bir uzmandır. Newall'ın benzersiz endüktif kodlayıcı teknolojisi, özellikle takım tezgahı uygulamalarında en zorlu ve en uç çevre koşullarında tavizsiz doğruluk sağlar.</p> -->
+                </div>
+                <div class="product-card">
+                    <img src="images/urun6.jpg" alt="Ürün 6">
+                    <h3>MLIP Model Lineer Yataklı Enkoder</h3>
+                    <!-- <p>MLIP Model Lineer Enkoderler kendinden yataklı yapısı sayesinde montajı kolay ürünlerdir. Manyetik alandaki değişimleri ölçtüğü için temassız ölçme prensibiyle çalışırlar. Koruma sınıfları çok yüksektir. Outdoor uygulamalarında hassas ve güvenli çözüm sağlar. 10, 20, 40, 50, 62.5, 80, 100 mikron gibi çözünürlükler ile üretilebilirler. Profilleri uc uca eklemek suretiyle manyetik band da kesilerek kullanıldığı için uzun ölçme boylarında da ( max. 50 metre) kullanılabilirler. Sensör Incremental sistem ölçüm yaptığı için, bir hat üzer,nde birden fazla sensör farklı pozisyonlama kontrolü amaçlı kullanılabilir. </p> -->
+                </div>
+            </div>
+             <div class="button-container" >
+                    <a href="urunlerimiz.html"> <button class="dahafazla-button" >Daha Fazla</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <br><br>
+    
+
+    <!-- Footer -->
+    <footer class="footer">
+       <section class="anasayfasm">
+           
+                
+            <div class="anasayfasm-container">
+                
+                <div class="anasayfasm-img">
+                    <a href="https://www.instagram.com/dkosdijital/">
+                        <img src="images/igw.png" alt="">
+                    </a>
+                    <a href="https://www.facebook.com/dkosdijitalkoordinatolcme/?locale=tr_TR">
+                        <img src="images/fbw.png" alt="">
+                    </a>
+                    <a href="https://www.linkedin.com/company/dkos-dijital-elektronik-metroloji-sanayi-ve-ticaret-limited-%C5%9Firketi/?viewAsMember=true">
+                        <img src="images/inw.png" alt="">
+                    </a>
+                </div>
+                
+            </div>
+           
+        </section>
+        <div class="container">
+            <p>©DKOS Dijital Elektronik Metroloji Sanayi ve Ticaret Limited Şirketi</p>
+        </div>
+        
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
