@@ -6,6 +6,12 @@
     <title>DKOS - Projelerimiz</title>
     <link rel="stylesheet" href="style.css">
     </head>
+    <script>
+  var password = prompt("Bu sayfayı görüntülemek için şifre girin:");
+  if (password !== "dkos2025") {
+    document.body.innerHTML = "<h1>Hatalı şifre! Sayfa gösterilemiyor.</h1>";
+  }
+</script>
 <body>
     <div id="particles-project"></div>
 
